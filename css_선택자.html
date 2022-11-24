@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자</title>
+    <!-- 내부스타일 시트 -->
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>선택자의 종류</h1>
+    <p>html 파일을 css를 통해 꾸밀 수 있고, 꾸미기 위해서는 지정된 선택을 해야한다.</p>
+    <em>작성법</em>
+    <p>선택자 { 속성명 : 속성값; }</p>
+    <table border="1">
+        <tr>
+            <td>선택자 종류</td>
+            <td>작성 방법</td>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <td>전체 선택자</td>
+            <td>* </td>
+            <td>HTML 내부의 모든 태그를 불러서 설정한다.(건 by 건)</td>
+        </tr>
+        <tr>
+            <td>태그 선택자</td>
+            <td>태그명</td>
+            <td>HTML 내부의 '불려진' 모든 태그를 설정한다.</td>
+        </tr>
+        <tr>
+            <td>아이디 선택자</td>
+            <td>#아이디이름</td>
+            <td>속성값 ID의 이름을 불러서 특정 ID만 설정한다.</td>
+        </tr>
+        <tr>
+            <td>클래스 선택자</td>
+            <td>.클래스명</td>
+            <td>속성값 class의 이름을 불러서 특정 클래스만 설정한다.</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                id와 class의 차이점: <br>
+                id(이름)는 한페이지에 한번만 사용할 수 있다.(중복사용이 안됨 - 한번 사용한 아이디는 두번 사용하는거 안됨) <br>
+                그러나 다른 아이디의 이름을 적용하면 또 사용 가능(웹페이지의 헤더, 푸터와 같은 개념. class로 지정하는것보다 더 포괄적인 범위임)
+                class는 중복적용이 가능하다. 또한 한 클래스에 여러 클래스명 사용 가능하다.
+                클래스명(별명)을 한칸 띄어쓰기로 여러 클래스명을 부여할 수 있다. 
+
+            </tr>
+
+    </table>
+
+    <h2>예제</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam reiciendis perspiciatis? Dolore consectetur, quod asperiores similique aspernatur accusantium culpa cupiditate esse enim deleniti aliquid, numquam excepturi odit. Voluptatibus, eos.</div>
+    <div id="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis alias molestias omnis voluptatem laboriosam ut dicta quidem, veritatis laborum obcaecati ipsa velit ex quisquam eligendi vero, assumenda atque doloremque facere.</div>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cupiditate distinctio neque at incidunt. Voluptatibus dolorum, hic quaerat, explicabo, fuga eum animi enim ad distinctio blanditiis voluptas possimus minima vero!</div>
+    <div class="box red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quis quaerat consectetur distinctio porro incidunt nisi maxime dolores vero dolorem sit, iste aut quod harum iure eveniet doloremque officia facere!</div>
+
+    <style>
+        * {font-size: 18px;}
+
+        h1 {font-size: 30px;}
+        /* 위에서 언급했던 명령어는 아래에서 덮어쓰기 할 수 있음 */
+        h2 {font-size: 20px;}
+
+        div {margin-bottom: 20px;
+            background-color: gray;
+            color: white;}
+
+        #box {font-weight: bold;
+                color: yellow;}
+
+        .box {padding: 10px;}
+
+        .red {color: red;}
+    </style>
+
+</body>
+</html>
