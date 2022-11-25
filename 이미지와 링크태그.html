@@ -7,82 +7,99 @@
         <title>이미지와 링크태그</title>
     </head>
     <body>
-        <h1>이미지와 링크태그</h1>
-        <hr>
-        <h2>이미지태그</h2>
-        <p>웹문서에 이미지를 불러오는 요소태그<br>
-            인라인태그로 줄바꿈이 되지 않음<br>
-            닫힘태그(짝궁)요소 없음<br>
-            이미지 태그와 함께 사용하는 필수속성 태그가 존재함.
 
-        </p>
-        <p>이미지 태그 속성들</p>
-        <ul>
-            <li>src = "이미지의 경로지정"</li>
-            <li>width = "가로사이즈 숫자지정(px단위 자동설정)"</li>
-            <li>height = "세로사이즈 숫자지정(px단위 자동설정)"</li>
-            <li>alt = "대체텍스트 속성"</li>
-        </ul>
-        <p>alt 속성은 웹 접근성(다양한 인류와 연령대 등등을 다 포함해서 모든 사람이 자유롭게 사용할 수 있게함)을 사용할 때 필수작성요소</p>
-        <h3>예제</h3>
-        <em>뷸특정한 사진을 공간을 채우기 위해 사용하는 사이트<br>
-            https://picsum.photos/200/300 - 가로 200 * 세로 300 사이즈의 사진 등록</em><br>
-        <img src="https://picsum.photos/200/300" alt=""><br>
-        <img src="https://picsum.photos/300/200" alt=""><br>
-        <!-- <img src="https://picsum.photos" alt=""> <p>이렇게 사이즈 지정 안하면 안불러와짐</p> -->
-        <img
-            src="data:image/jpeg;base64,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"
-            alt=""><br>
+            <h1>[이미지와 링크태그]</h1>
+            <hr>
+            <fieldset>
+                <legend><h2>이미지태그</h2></legend>
+                <p>웹문서에 이미지를 불러오는 요소태그<br>
+                    인라인태그로 줄바꿈이 되지 않음<br>
+                    닫힘태그(짝궁)요소 없음<br>
+                    이미지 태그와 함께 사용하는 필수속성 태그가 존재함.
+        
+                </p>
+                <p>이미지 태그 속성들</p>
+                <ul>
+                    <li>src = "이미지의 경로지정"</li>
+                    <li>width = "가로사이즈 숫자지정(px단위 자동설정)"</li>
+                    <li>height = "세로사이즈 숫자지정(px단위 자동설정)"</li>
+                    <li>alt = "대체텍스트 속성"</li>
+                </ul>
+                <p>alt 속성은 웹 접근성(다양한 인류와 연령대 등등을 다 포함해서 모든 사람이 자유롭게 사용할 수 있게함)을 사용할 때 필수작성요소</p>
 
-        <!--컴퓨터에 있는 사진 업로드-->
-        <img src="img/한국색동박물관-인포메이션-아키텍쳐.jpg" alt="" width="300" height="auto">
+            </fieldset> 
 
-        <h2>링크태그</h2>
-        <p>웹문서에서 다른 페이지나 웹페이지 내부의 특정위치로 이동할 때 사용하는 anchor 태그 - a 태그<br>
-            닫힘태그와 함께 사용하고 줄바꿈이 없는 인라인속성이다.
-        </p>
-        <p>앵커태그속성</p>
-        <ul>
-            <li>href = "위치경로 주소 작성"</li>
-            <li>target = "_blank" (새창열기)</li>
 
-        </ul>
 
-        <h3>예제</h3>
-        <ul>
-            <li><a href="http://www.naver.com">네이버로 바로가기</a></li>
-            <li><a href="http://www.naver.com" target="_blank">네이버 새창 열기</a></li>
-        </ul>
+        <fieldset>
+            <legend><h3>이미지 태그 예제</h3></legend>
+            <em>뷸특정한 사진을 공간을 채우기 위해 사용하는 사이트<br>
+
+                https://picsum.photos/200/300 - 가로 200 * 세로 300 사이즈의 사진 등록</em><br>
+
+
+            <img src="https://picsum.photos/200/300" alt=""><br>
+            <img src="https://picsum.photos/300/200" alt=""><br>
+            <!-- <img src="https://picsum.photos" alt=""> <p>이렇게 사이즈 지정 안하면 안불러와짐</p> -->
+            <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFRUYGRgaHBwcHBgcGhwYHhofHBkaGhgYHBgcI
+                y4lHB4rHx4cKDgmKy8xNTU1HCQ7QDszPy40NTEBDAwMEA8QHhISHzQrJSs0NjQ0NDQ0NDQ0NTY0PTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxM
+                TQ0NDQ0NDQ0Nv/AABEIAMABBwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAgMEBQYBB//EADgQAAEDAgQEBAYBAwMFAQAAAAEAAhEDIQQx
+                QVEFEmFxgZGh8AYiscHR4TITUvEUFUIjU2Jyggf/xAAaAQACAwEBAAAAAAAAAAAAAAAABAECAwUG/8QAKREAAwACAgICAgEDBQAAAAAAAAECAxESIQ
+                QxQVEFE2EUIiOBkaGx0f/aAAwDAQACEQMRAD8A9mQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIA4qnE8Sc3E06AAIc0km8j+URp/xKtlnWDnx7j/AN
+                pgHiRMeT1SnrWvsvCT3v6NGhJldVyh1CEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIASEipUDRJIA3JhReIY9tMaE7bdSs7iMQahlxLu1gOyrVqTfFgq+/SL5/F6Yy5n
+                dh+YUatx0D+LHHuY/KpgwjceKUGmCHAHrr6pas1L0N/wBNjnt7ZJr8YqETzBo6D7m6p8BiDzVHFxlz3SZMnlJAkjoAnKtF4aQ0EzOoG1rqBgOH1Gkc0AEknWJvFlk7ummzWZhb4yXbKrj/AMnDxMn1UhvE
+                ntsCfEz9VDJIGg6m/wDhNPqtHVaKq+y6xK/aJr/iCs3JrXDy+ie4X8YUah5XzTdMfNcE/wDtp4qgxOOa1pymFjcRiJcYkkm52GR9fPfc/ZSfsbxfjMWeWmtfTR7s103CUvLPhP4odQIpVjzUrCby0kmI3H
+                QeF5B9PpPDgCDINwReQmYtUujieX4l+NfG/Xw/sdQhCuKghCEACEIQAIQhAAhCEACEIQAIQhAAhCEACEIQAIQuIA
+                4ofE8cKTC456BTF5z8X8Yl5APyiw8NfH7qt1pDHjYf25FI8/Fmo4km2eal08QAI0WSwvEQB9PzdWNHFpOr12zvPxutJGnZUBsnZA
+                0CqOHV5unsXjg0Ql35C5aQrWGuXFEiriYsFCq4wqjxfF4JvlIiY80zTxnNkdLX8x1Ws22Ox4bS20WlbFHfzUCpi3C0Hyme/wClJp0veam08MIuFbtl9xHwZHHVHkkAZwAIEnoNRrqo
+                DCZHNrkT3gmdbyvQK3D2ObBAlZfinDWsEj8jMX7eChy0O+P5UV/brRUWa6CczlFovr30yuvSvgLivMw4dxJLRLSdpu3wz8TsvNnA9tNL6a6K5+GscadZjheHRImDoc9wHDw6KYrjSZX8l46z4Gvldo9lXUlpm6UnzxAIQhAAhCEACEIQAIQhAAhCEAC
+                EIQAIQhAHEISHVAMyAjYCkKO7GsGbkn/cKf8Ad6FRyX2W4V9M5xSvyUnu2B8zYfVeI/EGKJcfS/u69b+KMS04Z/KQZjI9ZXi/Fj8xPvf7LHKzr/io022M0sWRrkRa8k3vO0R6Kyw2MJMAze2lrW+6oGnYXMCe/wB/wfCw4bWjNwAEGMp7dkhkT0z0cpG2oYrlbM3hU/Eu
+                In+73OSgv4lt1jTz8lFq4jmtMTv77+Sxw4dPdFceJTXJoS2rmTqc5tbO+qteG1hLRoCYOpnc+81QOMWkkA/YSf2pGHrlsmRllnNxa2X6TK66HLlXJvcOdVPpvjNZzhvEAYBN/rGqsxiNQQtUzi5cNKtMti+yqeJN5rFKOJUXEV5RVEYsTmtmYxDIJNhtPXUXzzjRTOHN+cRvPTw6ZnzUXEfM6IjSbmSdtirXhtKIO8drT+YVGjqZa1j7PVuE1Oaiw9APKynKr+Hj
+                /wBBvj9VaLoT6R4TMtXS/lnUIQpMwQhCABCEIAEIQgAQhCABCFxAAo+KxTWCSew3TXEsc2iwuPgNyvP8dxsvdzOdebDQC6yyZOK/kc8XxKzvfwavEcaJ/jko7a7nXJgbCyzNPHyYBBE9pmcvJTBjJsDt76JZXvtnT/o1K0kXLqjU0+oOirBiEGtsZ95q3IlYNE1z7G6zXGeG0nzLS0n/AJNgZ5kjI91ZPqGP1H+Sqyo8lxgSRpftMBZ1Q1hxaezI8T4HUZLwQ9ty
+                XN03JaMvCR2VYx63VOs4HIgZDPxm0euvlWcX4O18vpgNfqMg7fs7rr6rJ1vpjsOpZm2uXQ5NPBBg2IsQcxCA5ToYV7Hg7/Cca69/LJRi5KaVD+zSb7LHDYnlIMCysafGHSebdUbXwU7QY5xDWiSdB9zojkXaiu6RoP8AcDr4DrIBF8lx+Kc6wEkCb5Wzt6eKk8L+HS
+                69QlxN9Ynqc3HNavDcKa0ZADaAPRaLdHOzeThxvS7ZicPhHSS6Y6jPYkK8w1OIA93stA7CsAt6AfhRqmGBHyuc05/yPuFPFoWvzP2fGjXcDbFFvb7lWMrDcO+IX0SGVRzN3BEt7WEjob9Vs8NiG1GhzTIOqcx5JpaR5zycF46dUun6fwQX8SIxLcOW2czmDpzMukAdI9QrRZ7jlXlxWDP9znt8w2PD8rQqy9swa
+                Wk0KQhCsVBCEIAEIQgAQhCAOJFR4AJJgAST0GaWs38bcQ/pYd0ZunyGf2UN6Wy+OHdqV8mK+MPiH+o8gGBk0e9VQ1HmA4Xtcbbm+WYUCq8vcXAQCBIzuImD1LZUypTlgcNstv3kudd8n2eqSnx4mZ9DDK554kjU79APRWWE4sTmBBmIMxBj5vXylV7KNnEQYyHSSTlnc+iYwzfmBOeeW+Qtn38L2RrTGMVzk9msOKAEk+/smKXFCbRYX2z0ANye2yq8
+                RVIYMwfp5+7pjAH5wTM5/mVOxhePLl0zYMcXBRcRSc2+ZAMTeJN4CnYM2CsDSBFwp47RzKycK9GSqEzM5kZgADvGRjNOUSDffw9mI81Z4/h4vHXTJUwZy29zvZZVI5jqbnoruP8ADg752/yGf/kOv2Ky5ML0DlDh78lleNYCHFzR1IURWnpmiTa69oqOZAcmS5LoMc5wa0SSYH5Ow6rfivkx/don4DDuqO5W+JOQG63HBOFBoECPq47kqHwThrWtAzAuXZcx69Oi
+                0NOsGt096BZSk3v4IzZa48V7LRhawWF99uyZqYqdVU1cf+1DqcQJIaBJgnaBqSSteXwKT4rfbL41ZkW3n9ps1Y8rWz7zoqL/AHSxjIa6GDkNSnsPjCbG5MR/gqHRo/GqVtotKvz5i++o0zCYoYurhpNJ2pJB/ie4OXnK62rMXveQJt396Ie0wSZgjQqnftezPimuNLa+iceMDEYjCl4DP6bnF0n5SSAW8pIGoiDvac1uwV5LVouv8szkeu+sj9K84B8QOoxTqkupiwdcub
+                +RpHTwW2LyNPV/7iPl/jlx5Yfj4/8AD0FCapVA4AtIINwRqE6nTighCEACEIQAIQhACV5v/wDpeJPM1ovAFupMz9AvSV5F8aV+fEm+RIH/AM23yKwz1xge/Hxyy7+kU+DwfMC4kDQA2JgF2eRMA3MTlmUmqeSQcirF1APbBEjt5EO0N1ScSY9lrPGxMEdiP0OiQhcnsczZKe02P8Nqtc4s3tHc8pHr6J2nhDznUzLpHUwJOcCVS8CxBFcu5SAxpO4km3bU+C0uBxAIg65GJmTnoSFfLtPSG/AdKXQxjaZAGc/TKDdROH1hz
+                gSTnIIiNuW99dBkpfE3jlcZgxAABM+OkfdVtCsQRJBEg5CbDUxIib3hVlfZ28e6hm84cJCtKe6z/CcYCLH32V5TdIzTE+jieRLVPYV2yszjmQYgT3EX16LR4g2Wc4i/5jYDveba/noq2beJvZDFTI6e7WRjKXM0xpGWZ3TLq1oMiRracvMSPRP0ng30/KTyvXZ0dNdmO4thYHOB0d3JsfsrT4TwPyPxDhryN+r3eUCe6XxOj/JuYeCPHSFpKWHFHD06UXa2D/7ES4+LiVN5nwS+W/8AgUyx/mTXp9jX+oIADYid42ufeijvxjjJnKMsp17qMHkuIg8oOutz+EsEZX6q870MuZTE1cSRrO5Pa19lXVMXJdJJJuTrG03UrEPt2+k/vN
+                VzgA4RIIEkn+6dNgtPg3xaJNJxOvygb+Q7hWGDqA3+ab6CMswZk+Sp6RE/NDrHUjMWMjbPwUuniMrnwA8SD72VW2aXPL0aHCVwTd0AeJVvhr7+9FluHYgWJOsAamxh06D8rWYF1hb3orScvyp4lk2kCFWY/DWLgCCLG1j4K5a6yZrMkZK1ynJzYyOa2VPBeOuoHlIJpz/E6WuW+PhdbzAY5lZgexwIPmO40K884jhYB73GlrQSPFV3B+LPw9SQSZ/k0ZWJF/L1UYM1Q+Nei/keBHky7x9P/s9gQoHCuICswOHiNipy6Ke1tHnqlzTmvaFIQhSQCEIQA3VdAJ6H0XinFqodiS5zo38SV7HxR0Uah/8AF30Xg/E6zhWc6+ZiDESIBB
+                S3kra0dj8THKqNngaLS3cwo2O4aHdAo3BeIjkH5mAMz9UjjPGyIaImJzmCZgHt90pK4voay+JVXpFZjgyi0tY0l7zJM6C8++qbw1ccskzYdTsFXvqOL/nN7gkXy66iPonWaAe4Wmt9s6OLDOOFKJeJfLTfTPLt9FU/1IJIuOuaexNeREqG+oTnsB4CwUNaG8b0i+4Tj4hpIABzMiJ38itXh8dbMdx7uvO6byDmNDmDmJ87qdRxzhYER1yteArJ7XRXJgm+zc18ZY/VUONxIkgHM5ZqvpcSJAFh1H3lQ6+Jmbe/Dz8Aq1/IYfGUsffVk7
+                jbL3P5S2V4Gg9jw/wqx9e9h79/RNf6kjI9fpafBL3PLpDV8Ui5w9QOqsbu4Tta5+nqrvieIy2n39PVZPglea46An7fdXXEakmxHf6W7pe41kS+kI9Xe/oH1RcZZW7ifukueQbyCLbRmoTH+UlSWPm5885TcdLRFewe46jT0H2zUKozOCZnKfpsVML+6jvB5oHb00PYLUtF6InNyiQAe8wYuRvB7pYeWi5mbiTYT/KPGCioDAFoBnIA+vbLom3uMBpFrwfr3yGazaGppMssHUMgH5YEiRoddJGV40Wq4XXsJMmbxsMjCxVN3LeSTAGeQEZnQ
+                CFd8OxZBgtLbmbcsRAjc9u6E9GHk4+Um2p1cjulPfNlTYfFj5QJg5eHVSP9SDkY29+81d2casLTHMSQWx76LLYxhDnG4Mk/kXV7Xr83l9FTY5wcSLybEmLkzP0HmqNJj3ipyzQ/BGOLXBpNjbzy+3qvRF5dwRnK4ECJmBsvTqZkA9AnvHf9ujhfloSzcl8jiEIW5ywQhcQBE4o2aNQDPld9CvFOLYZokkHOLZ9V7o5eUfFGA5HOZpJI7aekLLKtnS/G5eFtGKpYktY4T/x5QOpcCfQHvKZrVJMk5523N+qeq0v5AReI6ReR10UZ9OxIAF+vldLKdM9LNp7aFCr1m5g753/ScY82JFjkd4zTAZJ2yGesXM9TfxSiy2a0SM3a3oQ98zf
+                93FveySF00yusaVVzs2mhTfJSQzWDHefUJNMWIJMZxOuUxvf6pbSBpobSRpY2RrRf9g4Xw0xkdN9lEdUzvf6zn2Sqr1Ge6dftr65qtLaLLJpA9+/vZRqj12o/Sfd1HeZVJkVz5/osvh6p/wBaen3CvsWfmudP8ye49VQcCYQ8HwJ8Qr94l5vobbzlml8s/wCb/Qz8a9y2R3M1EyZM5aftOMfnt5ZWI9Es0ug92TdVpyE+8lql2aukwqPk75R5RCYLiXRlE2FzKWBIjKOufuUy4xP1/HVXCQxH8TzTIj9g3tZIa/UgwZgmLiQ21r5QuVanNyyIEGDbvc6mVH8dcrjx/SzoYj+SWwtMkkNtIPKTzHbp3lTcI4CJGd4BEkG2ZOUkqpD8lOpknL5cgL9JNznbZU0zd+i8wVcNbAEjS5sDN+6lsrTAAixuSN755WWfpBzXOJc0u/uaZ1mBpCnM2uBeATzDoJiSfyraMLxpvZZurWnK4joJTNOhzEuIAF4tFvvn6pLReZFzvcRl4KZhzrnPr7KskYV/auidgm/OIymAPsvSaYgAdFhvh3DF
+                1Vo0B5j4XW8TuGdLZ5v8lfLIl9I6hCFuc04uErpTbigBLysv8X4DnZzjNufb9LSvcoVe9ioa2tGmOnFKkeKYmlDlFc1bD4o4N/TdztEsJt0P9pWTqNS7Wmeiw5lcpoiuSSE68JEXvl0z9UG3ISxsmJA6kwutI2nv6FEJPZBdU0Os/S44pJckuUFlY1VfpJ1tppl1/Sjvf4ae/IJx7eyZe1VaIrMkhp7pQxklLp03PMNEn35LQ8KwDWEPfDnDIaN69ShdCGbMWOH4b/TwpJHzlzHnoA6A3yJPj0UamPmPZT61YuaRuFBaIy9z/hY5F/en/Bfw7fFp/YudJ9hNvz8f8XPvJLcfeSbO5/yEIbEdPd4TTxYjMZx4X9E64W9z+U245HP3r17qxMvshVRFoJjQmRF51zmEgsI6k/k5gZKe5s3RTpjP34KNIYm9EdmHJB
+                mxtAjwPYqZTZk03sbEwBGvU/lOEWERqht7WtN4uVGiyyMkUQMiJsIOozkD8qQyI5dJBmdgRsogect8ov0yTzBt5ddfujRDrZLY6ctVYYdhtbw06AdFGw1Mm5K03w/ws1Hczv4tzO/QLSJ29CHk+RMS2y++GsDyM5iLuy6D9q8SWiLJSdS0tHmMlu6dP5OoQhSUElNuTpTbggCPUKhVnKdUaoOIYoLIrsVyuaWuALTYgrDcb4Fyy6l8zf7dR2/u+q2uJYVT4thVKWxnBkqHtM86eyLeYy8025nv9rUY/Ch2Y8dfNU9XAEG09lk1o6keXL9lZyo5T91MOGdsgYZ39qg2/fH2ROWUlysGYFx0TzOFk5hBnXlSl0Uj2k5XSmYGf5eQ/K0TOFHZOf7cRojTFbzuvRUUaYaIaIUpgUw4ONEl1GFXRly2NscnHU7SOnp+005sJbKkW0VLnfaGMGTjXfpjb+2ybIi6mhgcLG+30zUerSIv1VFXwdKaT9Ecn37ySXtTr2C8b5/dI
+                LNFY0Q0W+/0n2iBN4HuOqA3f8Zb7LoZ18R2UlzsifY7HL3CUxlxbXK5XGWz8t/HRSKbCY8P2o0Ry0Iaw55RlFrqfhcMZB99ve6XQwm8+K0HC+Fl0E2H17flXmWxfP5ExO9neDcKNQxENGZ9/RbrC0GsaGtEAe5PVRMFTDGhrRAU9pTUSpPO+RnrLXfodC6khKVxcEIQgASSEpCAGHsTD6SmkJJagnZUVcLKg1sBOi0RppDqKjRKoyNbhE6KK/gU6LanDhc/0w2VeKLrIzED4fGycZ8PjZbP/TBdGHCnig/YzJN4GNk6ODjZakYcLv8AQCjiiP2Myp4WNkxU4b0Wudhwm34VHElWzE1uHdFXYjAHZb6pguih1uHToquS85DzqvhSNFFdSK32I4ROirMRwc7Kjlm05EZDlIuLKQ2qHCHATvl/hW9bhRGirq3D3DRZVGzfHncvaIb2env7JsMjfupDqTha6bc07HwVeLQ/Hly/fQy5vvXql02EpxrOh9VMw+Fe7JtvJTo2eeV3sZp0vfvRWGEwpcflE9VPwfB/7r9NFfYXBQIAgLSc
+                e/Yjm81LqeyHgOGAQXXO2n7V/h6a7Qwym06S3mUvRy8mSre6Yqk1SWBJYxOtCsYMUEpcAXVJAIQhAH//2Q=="
+                alt=""><br>
+    
+            <!--컴퓨터에 있는 사진 업로드-->
+            <img src="img/한국색동박물관-인포메이션-아키텍쳐.jpg" alt="" width="300" height="auto">
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend><h2>링크태그</h2></legend>
+            <p>웹문서에서 다른 페이지나 웹페이지 내부의 특정위치로 이동할 때 사용하는 anchor 태그 - a 태그<br>
+                닫힘태그와 함께 사용하고 줄바꿈이 없는 인라인속성이다.
+            </p>
+            <p>앵커태그속성</p>
+            <ul>
+                <li>href = "위치경로 주소 작성"</li>
+                <li>target = "_blank" (새창열기)</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>링크태그 예제</h3></legend>
+            <ul>
+                <li><a href="http://www.naver.com">네이버로 바로가기</a></li>
+                <li><a href="http://www.naver.com" target="_blank">네이버 새창 열기</a></li>
+            </ul>
+        </fieldset>
 
     </body>
 </html>
