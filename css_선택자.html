@@ -71,35 +71,41 @@
                 <td>부모자>자손선택자</td>
                 <td>다이렉트 자손자에 한해서 설정 가능하다.</td>
             </tr>
-
     </table>
 
-    <h2>예제</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam reiciendis perspiciatis? Dolore consectetur, quod asperiores similique aspernatur accusantium culpa cupiditate esse enim deleniti aliquid, numquam excepturi odit. Voluptatibus, eos.</div>
-    <div id="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis alias molestias omnis voluptatem laboriosam ut dicta quidem, veritatis laborum obcaecati ipsa velit ex quisquam eligendi vero, assumenda atque doloremque facere.</div>
-    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cupiditate distinctio neque at incidunt. Voluptatibus dolorum, hic quaerat, explicabo, fuga eum animi enim ad distinctio blanditiis voluptas possimus minima vero!</div>
-    <div class="box pred">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quis quaerat consectetur distinctio porro incidunt nisi maxime dolores vero dolorem sit, iste aut quod harum iure eveniet doloremque officia facere!</div>
-    <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro saepe omnis laudantium inventore. Possimus libero, nostrum placeat sunt tempore, maiores enim blanditiis quidem iure perferendis eum beatae magnam laborum? Reiciendis.</p>
 
-    <div class="list"                                                                                                                                                                                                                                                                                                                                                                                            >
-        <ul>
-            <li>
-                <em>menu1</em>
-            </li>
-            <li>menu2</li>
-            <li>menu3</li>
-            <li>menu4</li>
-        </ul>
-        <em>자손자에 대한 정의</em>
+    <fieldset>
+        <legend><h2>예제 1</h2></legend>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto totam reiciendis perspiciatis? Dolore consectetur, quod asperiores similique aspernatur accusantium culpa cupiditate esse enim deleniti aliquid, numquam excepturi odit. Voluptatibus, eos.</div>
+        <div id="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis alias molestias omnis voluptatem laboriosam ut dicta quidem, veritatis laborum obcaecati ipsa velit ex quisquam eligendi vero, assumenda atque doloremque facere.</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cupiditate distinctio neque at incidunt. Voluptatibus dolorum, hic quaerat, explicabo, fuga eum animi enim ad distinctio blanditiis voluptas possimus minima vero!</div>
+        <div class="box pred">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quis quaerat consectetur distinctio porro incidunt nisi maxime dolores vero dolorem sit, iste aut quod harum iure eveniet doloremque officia facere!</div>
+        <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro saepe omnis laudantium inventore. Possimus libero, nostrum placeat sunt tempore, maiores enim blanditiis quidem iure perferendis eum beatae magnam laborum? Reiciendis.</p>
+    </fieldset>
 
-    </div>
+
+    <fieldset>
+        <legend><h2>예제 2</h2></legend>
+        <div class="list"                                                                                                                                                                                                                                                                                                                                                                                            >
+            <ul>
+                <li>
+                    <em>menu1</em>
+                </li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+            <em>자손자에 대한 정의</em>
+        </div>
+    </fieldset>
+
 
     <style>
         * {font-size: 18px;}
 
         h1 {font-size: 30px;}
         /* 위에서 언급했던 명령어는 아래에서 덮어쓰기 할 수 있음 */
-        h2 {font-size: 20px;}
+        h2 {font-size: 25px;}
 
         div {margin-bottom: 20px;
             background-color: gray;
@@ -110,8 +116,10 @@
 
         .box {padding: 10px;}
 
+        .pred {text-decoration: underline;}
         .red {color: red;}
-        p.red {text-decoration: underline;}
+
+
 
         .list em {font-size: 30px;}
         .list li {color: blue;}
