@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 반응형 선언문(meta가) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>01. 글자태그_제목,본문</title>
+    </head>
+    <body>
+        <!-- 제목태그학습서 -->
+
+        <h1>01. 글자태그</h1>
+        <p>
+            제목태그와 문단태그로 나뉜다.<br/>
+            <!-- br 같은 명령을 내리는 태그는 닫힘태그가 없다.(짝궁이 없음) -->
+            종류: 제목(heading),단락(paragraphp),줄바꿈(break),수평줄(horizonal rule)
+        </p>
+        <hr/>
+
+
+        <fieldset>
+            <legend><h2>제목태그</h2></legend>
+            <p>제목태그는 h1 ~ h6 까지 숫자가 높아질수록 글씨가 작아진다.</p>
+            <h1>제목태그-h1</h1>
+            <h2>제목태그-h2</h2>
+            <h3>제목태그-h3</h3>
+            <h4>제목태그-h4</h4>
+            <h5>제목태그-h5</h5>
+            <h6>제목태그-h6</h6>
+
+            <hr>
+
+            <p>제목태그의 특징:
+                <ol>
+                    <li>글씨볼드 효과</li>
+                    <li>위아래 여백효과</li>
+                    <li>자동줄바꿈(블럭,덩어리)효과</li>
+                </ol>
+            </p>
+
+            <p>주의사항: 
+                <ul>
+                    <li>h1은 주로 로고 등에 사용하며 html파일 내부에서 1번 이상 사용하기를 금한다.</li>
+                    <li>텍스트나 블럭이 아닌 요소는 넣을 수 있지만 내부에 블럭을 넣을수는 없다.</li>
+                </ul>
+            </p>
+        </fieldset>
+        <!-- <h6><p>지금 이 멸령어는 적용할 수 없는 예 이다.</p></h6> -->
+
+
+        <fieldset>
+            <legend>
+                <h2>단락태그</h2>
+            </legend>
+            <p>문장과 같은 텍스트 요소들을 가두는 역할을 한다.(문장은 무조건 여기{태그 안}에 가둬야함)</p>
+            <hr>
+            <p>p태그의 특징:<br/>
+                <ol>
+                    <li>여백을 가지고 있음</li>
+                    <li>자동줄바꿈(블럭)효과</li>
+                </ol>
+            </p>
+            <p>주의사항: 
+                <ul>
+                    <li>텍스트나 블럭이 아닌 요소는 넣을 수 있지만 내부에 블럭을 넣을수는 없다.</li>
+                </ul>
+            </p>
+        </fieldset>
+        <!-- <p><h1>지금 이 명령어는 적용할 수 없는 예 이다.</h1></p> <p><p>지금 이 명령어는 적용할 수 없는 예
+        이다.</p></p> -->
+
+
+        <fieldset>
+            <legend>
+                <h2>줄바꿈태그</h2>
+            </legend>
+            <p>br - 문맥상 강제적으로 줄바꿈을 하고 싶을때 사용한다. 또한 닫힘태그는 없다.</p>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                <h2>구분선태그</h2>
+            </legend>
+            <p>hr - 웹 문서 내부에 구분선을 그리고 싶을때 사용한다.<br/>
+                복잡한 내용들을 헷갈리지 않게 구분해주는 역할을 해준다. 역시 닫힘태그는 없다.</p>
+        </fieldset>
+        <!-- +) 노션에 codpen안에 있는 내용들은 여기 body 안에 내용들만 담겨있음. -->
+
+
+        <fieldset>
+            <legend>
+                <h3>전체예제</h3>
+            </legend>
+            <h4>제목설정</h4>
+            <p>1단락- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+                consectetur facere voluptates odio praesentium harum sed, quasi eligendi
+                incidunt ducimus possimus repellendus unde quisquam quae rem doloremque,
+                excepturi voluptatibus voluptas.</p>
+            <p>2단락- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, a?
+                Cupiditate, repellat aliquid soluta deserunt, ea provident error quasi impedit
+                delectus dolore, modi iusto labore quam sequi accusamus eum ullam?</p>
+        </fieldset>
+    </body>
+</html>
