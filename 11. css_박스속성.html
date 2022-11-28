@@ -124,36 +124,89 @@
             </ul>
         </fieldset>
 
-        <h3>예제</h3>
-        <div class="box01">
-            <span>100PX</span>
-            <span>100PX</span>
-            <p class="pad">패딩 50PX</p>
-            <p class="mar">마진 50PX</p>
-        </div>
 
-        <div class="box02 margin">
-            <!-- div*box$ - $는 순번대로 라는 뜻 -->
-            <div>box1</div>
-            <div>box2</div>
-            <div>box3</div>
-            <div>box4</div>
-            <div>box5</div>
-        </div>
-        <div class="box02 padding">
-            <div>box1</div>
-            <div>box2</div>
-            <div>box3</div>
-            <div>box4</div>
-            <div>box5</div>
-        </div>
-        <div class="box02 border">
-            <div>box1</div>
-            <div>box2</div>
-            <div>box3</div>
-            <div>box4</div>
-            <div>box5</div>
-        </div>
+        <fieldset>
+            <legend><h2>둥근 사각형 속성</h2></legend>
+            <p>border-radius 값을 적용하여 텍스트 필드나 div 등의 요소를 원, 반원, 1/4조각 등 다양한 형태를 제작할 수 있다.</p>
+
+            <hr>
+
+            <ol>
+                <p>작성법 <br>
+                    border-radius: 30px 혹은 border-radius: 10pz 20 px 30px 40px(top-left 요런식으로 별도로 기재도 가능)
+                </p>
+            </ol>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <legend><h3>예제</h3></legend>
+            <div class="box01">
+                <span>100PX</span>
+                <span>100PX</span>
+                <p class="pad">패딩 50PX</p>
+                <p class="mar">마진 50PX</p>
+            </div>
+    
+            <div class="box02 margin">
+                <!-- div*box$ - $는 순번대로 라는 뜻 -->
+                <div>box1</div>
+                <div>box2</div>
+                <div>box3</div>
+                <div>box4</div>
+                <div>box5</div>
+            </div>
+            <div class="box02 padding">
+                <div>box1</div>
+                <div>box2</div>
+                <div>box3</div>
+                <div>box4</div>
+                <div>box5</div>
+            </div>
+            <div class="box02 border">
+                <div>box1</div>
+                <div>box2</div>
+                <div>box3</div>
+                <div>box4</div>
+                <div>box5</div>
+            </div>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend><h3>둥근사각형 예제</h3></legend>
+            <div class="box_1128">
+                <!-- p*6{둥근사각형$} -->
+                <p>둥근사각형1</p>
+                <p>둥근사각형2</p>
+                <p>둥근사각형3</p>
+                <p>둥근사각형4</p>
+                <p>둥근사각형5</p>
+                <p>둥근사각형6</p>
+            </div>
+        </fieldset>
+
+
+        <style>
+            .box_1128 p {width: 200px;
+                        height: 200px ;
+                        background-color:aquamarine ; }
+            /* .box_1128 p:nth-child(1) {border-radius: 30/30px;} */
+            .box_1128 p:nth-child(1) {border-radius: 50px/30px;}
+            .box_1128 p:nth-child(2) {border-radius: 50%;}
+            .box_1128 p:nth-child(3) {border-radius: 10px 20px 30px 40px;}
+            .box_1128 p:nth-child(4) {border-top-left-radius: 50px;}
+            .box_1128 p:nth-child(4) {border-bottom-right-radius: 100px;}
+            /* 30px -> 30px/30px로 사용하는 것과 같다. 앞의 숫자는 가로방향, 뒤에 숫자는 세로방향 */
+            .box_1128 p:nth-child(5) {border-radius: 15px 70px 15px 70px/50px 100px 60px 10px;}
+            .box_1128 p:nth-child(6) {border-radius: 80px 50px 30px 20px/60px 90px 10px 50px;}
+
+        </style>
+
+
 
         <article class="bg1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Modi ea quidem ab ipsam. Tenetur totam cumque vero dolorem. Cumque facilis
@@ -170,7 +223,6 @@
             Quasi alias maiores aspernatur necessitatibus sunt quo hic soluta delectus
             voluptatem et, dolorem vitae illum unde sint nesciunt suscipit exercitationem
             placeat libero!</article>
-
 
 
         <style>
@@ -274,6 +326,7 @@
                 background-repeat: repeat-x;
                 background-size: contain;}
         </style>
+
 
     </body>
 </html>ㄴ
