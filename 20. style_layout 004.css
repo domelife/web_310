@@ -1,0 +1,29 @@
+/* 언어 설정 */
+@charset 'uft-8';
+
+
+/* 박스 1 설정 */
+.boxA {float: left; width: 20%;}
+.boxB {float: left; width: 80%;}
+/* 박스 1 부모자 설정 */
+.box1::after{content: ""; clear: both; display: block;}
+
+/* 박스 2 설정 */
+.box2 {height: 80vh}
+.box2::after{content: ""; clear: both; display: block;}
+
+
+/* 박스 3 설정 */
+.boxC {float: left; width: 33.3333%;}
+.boxD {float: left; width: 33.3333%;}
+.boxE {float: left; width: 33.3333%;}
+/* 박스 3 부모자 설정 */
+.box3::after {content: ""; clear: both; display: block;}
+
+
+/* 박스 4설정 */
+.boxF {float: left; width: 20%;}
+.boxG-1 {float: right; width: 80%;}
+.boxG-2 {float: right; width: 80%;}
+/* 박스 4 부모자 설정 */
+.box4::after {content:""; clear: both; display: block;}
