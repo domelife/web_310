@@ -22,7 +22,7 @@
 
 
 /* 박스 4설정 */
-.boxF {float: left; width: 20%;}
+.boxF {float: left; width: 20%; height: 40vh;}
 .boxG-1 {float: right; width: 80%;}
 .boxG-2 {float: right; width: 80%;}
 /* 박스 4 부모자 설정 */
