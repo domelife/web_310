@@ -1,0 +1,19 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 박스 1의 flex 정렬 */
+.box1 {display: flex;}
+.boxA {width: 20%;}
+.boxB {width: 80%;}
+
+
+/* 박스 3의 flex 정렬 */
+.box3 {display: flex;}
+.box3>div {flex: 1;}
+
+
+
+/* 박스 4의 flex 정렬 */
+.box4 {display: flex;}
+.boxF {width: 20%}
+.boxG {width: 80%;}
