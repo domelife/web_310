@@ -1,0 +1,28 @@
+/* 언어 설정 */
+@charset 'uft-8';
+
+
+/* 박스 A와 B 설정 */
+.boxA {float: left; width: 20%;}
+.boxB {float: left; width: 80%;}
+/* 박스 1 부모자 설정 */
+.box1::after{content: ""; clear: both; display: block;}
+
+/* 박스 2 설정, 사실 굳이 안해도 됨. */
+.box2 {height: 80vh}
+.box2::after{content: ""; clear: both; display: block;}
+
+
+/* 박스 C와 D와 E 가로정렬 */
+.boxC {float: left; width: 33.3333%;}
+.boxD {float: left; width: 33.3333%;}
+.boxE {float: left; width: 33.3333%;}
+/* 박스 3 부모자 설정 */
+.box3::after {content: ""; clear: both; display: block;}
+
+
+/* 박스 F와 G 가로정렬 */
+.boxF {float: left; width: 20%; height: 35vh;}
+.boxG {float: left; width: 80%;}
+/* 박스 4 부모자 설정 */
+.box4::after {content:""; clear: both; display: block;}
