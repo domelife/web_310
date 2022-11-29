@@ -1,0 +1,57 @@
+/* 언어 설정 */
+@charset 'uft-8';
+
+/* 연습해본것 
+.boxA, B의 가로정렬 
+.boxA {display: flex;}
+.boxB{display: flex}
+
+
+.box1 {width: 20%;}
+.box2 {width: 20%;}
+
+.boxC {width: 80%;}
+
+
+.box3 {width: ;}
+
+
+boxC 가로정렬 */
+
+
+
+
+/* 정답 */
+/* flex 정렬방식 */
+
+/* warp 플렉스 정렬 */
+
+
+
+
+/* 박스 C플렉스 정렬  */
+
+/* 박스 D플렉스 정렬 */
+
+.warp {display: flex;}
+
+@media (min-width:960px) {
+        .boxA {width: 20%;
+                display: flex;
+                flex-direction: column;}
+        .boxA-1 {width: 80%;}
+        .boxA>div {flex: 1;}
+
+}
+
+@media (min-width:600px) {
+        .boxC {display: flex;}
+        .boxC>div {flex: 1;}
+
+}
+
+@media (min-width:320px) {
+        .boxD {display: flex;}
+.box6 {width: 80%;}
+.box7 {width: 20%;}
+}
