@@ -21,37 +21,48 @@ boxC 가로정렬 */
 
 
 
+
 /* 정답 */
 /* flex 정렬방식 */
 
 /* warp 플렉스 정렬 */
-
-
+@media (min-width:960px) {
+        .warp {display: flex;
+                flex-direction: row;}
+        .boxA {width: 20%;
+                display: flex;}
+        .boxA-1 {width: 100%;}
+        .boxA>div {flex: 1;}
+}
 
 
 /* 박스 C플렉스 정렬  */
+@media (min-width:600px) {
+        .boxC {display: flex;
+
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;}
+
+        .box3 {width: 50%;
+                order: 3;}
+        .box4 {width: 50%;
+                order: 1;}
+        .box5 {width: 50%;
+                order: 2;}
+
+        .box5 {align-self: flex-end;}
+        .boxC>div {flex: 1;}
+}
+
 
 /* 박스 D플렉스 정렬 */
-
-.warp {display: flex;}
-
-@media (min-width:960px) {
-        .boxA {width: 20%;
-                display: flex;
-                flex-direction: column;}
-        .boxA-1 {width: 80%;}
-        .boxA>div {flex: 1;}
-
-}
-
-@media (min-width:600px) {
-        .boxC {display: flex;}
-        .boxC>div {flex: 1;}
-
-}
-
 @media (min-width:320px) {
-        .boxD {display: flex;}
-.box6 {width: 80%;}
-.box7 {width: 20%;}
+        .boxD {display: flex;
+        justify-content: center;}
+
+        .box6 {width: 30%;
+                order:2}
+        .box7 {width: 20%;}
 }
