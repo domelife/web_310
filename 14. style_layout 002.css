@@ -1,0 +1,17 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 박스 a,b의 가로정렬 */
+.boxa {float: left; width: 50%;}
+.boxb {float: left; width: 50%;}
+/* 부모자(박스2) 설정 */
+.box2::after {content: ""; clear: both; display: block;}
+
+
+
+/* 박스 c,d,e의 가로정렬 */
+.boxc {float: left; width: 20%;}
+.boxd {float: left; width: 60%;}
+.boxe {float: left; width: 20%;}
+/* 부모자(박스3) 설정 */
+.box4::after {content: ""; clear: both; display: block;}
