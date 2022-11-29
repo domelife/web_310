@@ -1,0 +1,29 @@
+/* 언어 설정 */
+@charset 'uft-8';
+
+
+/* clear box 정렬방식 */
+/* boxA와 박스 A-2의 가로정렬 */
+.boxA {width: 20%;
+        float: left;}
+.boxA-2 {width: 80%;
+        float: left;}
+
+.wrap::after {content: ""; clear: ; display: block;}
+
+
+
+/* box3과 box4와 box5의 가로정렬 */
+.box3 {width: 33.3333%;float: left;}
+.box4 {width: 33.3333%;float: left;}
+.box5 {width: 33.3333%;float: left;}
+
+.boxC::after {content: ""; clear: both; display: block;}
+
+
+
+/* box6과 box7의 가로정렬 */
+.box6 {width: 80%; float: left;}
+.box7 {width: 20%; float: left;}
+
+.boxD::after {content: ""; clear: both; display: block;}
