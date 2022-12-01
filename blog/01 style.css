@@ -10,44 +10,47 @@
 
 ul {list-style: none;}
 
-a {color: black;
+a {color: #000;
         text-decoration: none;}
 
 /* 기본 CSS */
 /* 로고 설정 */
-.logo {font-size: 40px;
+.logo {font-size: 30px;
         font-weight: normal;
         font-family: 'Paytone One', sans-serif;}
-.logo>a {color: black;
+.logo a {color: #000;
         text-decoration: none;}
 
-/* 메뉴 설정 */
-.box2 {}
-.box2>nav {}
-.box2>nav>ul {display: flex;}
-.box2>nav>ul>li {width: auto;}
-.box2>nav>ul>li>a {display: block;
-                padding: 18px;
-                font-size: 15px;}
 
-.box2 {background-color: rgb(224, 172, 184);}
+        
+/* 메뉴설정 */
+.gnb>ul {display: flex;}
+.gnb>ul>li {width: auto;}
+.gnb>ul>li>a {display: block;
+padding: 15px;
+font-size: 14px;}
 
 
+.box2 {background-color: #7cbac1;}
 
 
-/* ###################################미디어 쿼리 구간###################################### */
+
+
+/* ################################################################미디어쿼리 구간########################################################################## */
+
 
 /* 모바일 구간 */
 
 
 
 /* 테블릿 구간 */
-/* ############768px이상 일때만############# */
+/* ##########768px 이상일 때######### */
 @media (min-width:768px) {
-        .box3 {width: 60%;
-        float: left;}
+    /* 박스 3과 박스 4의 가로 정렬 */
+        .box3 {width: 70%;
+                float: left;}
 
-        .box4 {width: 40%;
+        .box4 {width: 30%;
                 float: left;}
 
         .boxA::after {content: ""; clear: both; display: block;}
@@ -55,10 +58,9 @@ a {color: black;
 
 
 
-
 /* 웹 구간 */
-/* ############1280px이상 일때만############# */
+/* ##########1280px 이상일 때######### */
 @media (min-width:1280px) {
-        .box1, .boxA .nav {width: 900px;
+        .box1, .boxA .gnb {width: 1190px;
         margin: 0 auto;}
 }

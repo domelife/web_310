@@ -2,7 +2,7 @@
 @charset 'uft-8';
 
 /* 전체 초기화 */
-* {margin: 0; padding: 0;}
+body {margin: 0; padding: 0;}
 
 #wrap {display: flex;
         flex-flow: row wrap;
@@ -16,21 +16,21 @@
         position: relative;
         justify-content: flex-end;}
 
-.header>h1 {background-color: #ff6b57;
+.header>h1 {background-color: #87bd86;
         width: 12.5%;
         height: 142px;
         position: absolute;
         left: 0;
         top: 0;}
 
-.header>nav {background-color: #ff6b57;
+.header>nav {background-color: #60926c;
         width: 87.5%;
         height: 80px;}
 
 
 
 /* 슬라이더 설정 */
-.slider {background-color: #3c90be;
+.slider {background-color: #6aaacc;
         width: 50%;
         height: 440px;}
 
