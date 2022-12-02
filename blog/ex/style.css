@@ -27,10 +27,124 @@ a {color: black;
 .box2>nav>ul {display: flex;}
 .box2>nav>ul>li {width: auto;}
 .box2>nav>ul>li>a {display: block;
-                padding: 18px;
-                font-size: 15px;}
+                padding: 15px 40px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #000;}
 
 .box2 {background-color: rgb(224, 172, 184);}
+
+
+
+
+
+
+/* 기사 설정 */
+.story {margin-top: 30px;}
+
+.story h2 {font-size: 50px;
+        margin-bottom: 10px;
+        font-weight: bold;}
+
+.story time {margin-bottom: 10px;}
+
+.story p {margin-bottom: 10px;
+        margin-top: 10px;}
+
+.story h3 {margin-top: 40px;
+        border-left: solid 8px rgb(224, 172, 184);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 25px;}
+
+.story img {width: 100%;
+        height: auto;}
+
+
+/* 사이드 메뉴 */
+.submenu {margin-top: 30px;}
+.submenu h3 {margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: double 1px #999;
+        font-size: 20px;
+        color: #666;}
+.submenu ul {}
+.submenu ul>li {margin-left: 5px;}
+.submenu ul>li>a {display: block;
+        padding: 3px;
+        font-size: 15px;}
+
+
+
+
+
+/* 카테고리 설정 */
+.category {margin-top: 30px;}
+.category h3 {margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: double 1px #999;
+        font-size: 20px;
+        color: #666;}
+.category ul {}
+.category ul>li {margin-left: 5px;}
+.category ul>li>a {display: block;
+        padding: 3px;
+        font-size: 15px;}
+
+
+
+
+/* 인기글 설정 */
+.popular {margin-top: 30px;}
+.popular h3 {margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: double 1px #999;
+        font-size: 20px;
+        color: #666;}
+.popular ul {}
+.popular ul>li {margin-left: 5px;}
+.popular ul>li>a {display: block;
+        padding: 5px;
+        font-size: 15px;}
+
+
+
+
+
+/* 푸터 설정 */
+.copyright {color: #666;
+        font-size: 15px;}
+
+.box5 {border-top: dashed 0.5px #666;}
+
+
+
+
+
+
+
+
+
+/* 박스 간격설정 */
+.box1 {padding-top: 10px;
+        padding-bottom: 10px ;}
+.box2 {padding-top: 5px;
+        padding-bottom: 5px;}
+.box3 {padding-top: 10px;
+        padding-bottom: 60px;}
+.box4 {padding-top: 10px;
+        padding-bottom: 10px;}
+.box5 {padding-top: 30px;
+        padding-bottom: 20px;}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,6 +165,12 @@ a {color: black;
                 float: left;}
 
         .boxA::after {content: ""; clear: both; display: block;}
+
+        /* 박스 3과 박스 4의 좌우간격 */
+        .box3 {padding-right: 30px;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;}
 }
 
 
@@ -59,6 +179,6 @@ a {color: black;
 /* 웹 구간 */
 /* ############1280px이상 일때만############# */
 @media (min-width:1280px) {
-        .box1, .boxA .nav {width: 900px;
+        .box1, .boxA , .nav , .copyright {width: 1280px;
         margin: 0 auto;}
 }

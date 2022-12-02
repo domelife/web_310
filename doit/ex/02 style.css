@@ -2,7 +2,7 @@
 @charset 'uft-8';
 
 /* 전체 초기화 */
-body {margin: 0; padding: 0;}
+* {margin: 0; padding: 0;}
 
 #wrap {display: flex;
         flex-flow: row wrap;
@@ -16,45 +16,43 @@ body {margin: 0; padding: 0;}
         position: relative;
         justify-content: flex-end;}
 
-.header>h1 {background-color: #87bd86;
-        width: 12.5%;
+.header>h1 {
+        width: 13%;
         height: 142px;
         position: absolute;
         left: 0;
         top: 0;}
 
-.header>nav {background-color: #60926c;
-        width: 87.5%;
-        height: 80px;}
+.header>nav {}
 
 
 
 /* 슬라이더 설정 */
-.slider {background-color: #6aaacc;
+.slider {background-color: #c8a2a1;
         width: 50%;
         height: 440px;}
 
 
 
 /* 갤러리 설정 */
-.gallery {background-color: #f8de73;
+.gallery {background-color: #dacdc1;
         width: 27.08%;}
 
 
 
 /* 인기 검색어 설정 */
-.rank {background-color: #00d2a5;
+.rank {background-color: #a3898c;
         width: 22.92%;}
 
 
 /* 최근글 설정 */
-.latest_post {background-color: #9cabe4;
+.latest_post {background-color: #dfdfdf;
                 width: 30%;
-                height: 270px;}
+                height: 500px;}
 
 
 /* 인기글 설정 */
-.popular_post {background-color: #d76817;
+.popular_post {background-color: #95343f;
                 width: 30%;}
 
 
@@ -64,12 +62,12 @@ body {margin: 0; padding: 0;}
         width: 23%;}
 
 .banner>div {flex: 1;}
-.banner_1 {background-color: #0175bb;}
-.banner_2 {background-color: #1261c9;}
+.banner_1 {background-color: #d2aaad;}
+.banner_2 {background-color: #5c2331;}
 
 
 /* sns 설정 */
-.sns {background-color: #fe6eda;
+.sns {background-color: #ac9d9a;
         width: 17%;}
 
 
