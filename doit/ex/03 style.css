@@ -71,7 +71,7 @@ a {color: #ffffff;
 .header>h1>a {
     display: block;
     padding: 40px 10px;
-    color: #ffffff;}
+    color: #000;}
 
 .nav {
     width: 75%;
@@ -86,8 +86,9 @@ a {color: #ffffff;
 .nav>ul>li>a {
     display: block;
     font-size: 30px;
+    font-weight: bold;
     padding: 0 50px;
-    color: #ffffff;}
+    color: #000;}
 
 .nav>ul>li>a>span {}
 
@@ -157,24 +158,25 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 
 
 
-/* 인기검색어 영역 */
-.rank {
+/* 프로필 영역 */
+.profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;}
 
-.title {
-    margin-bottom: 50px;
-    font-size: 30px;
+.profile .title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
-    color: #ffffff;}
+    color: #000;}
 
-.title>ul {}
+.profile.title>ul {}
 
-.title>ul>li {}
+.profile .title>ul>li {}
 
-.title>ul>li>a {
+.profile .title>ul>li>a {
     display: block;
     font-size: 20px;
     padding: 10px;
@@ -184,9 +186,105 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 
 
 
+/* 포트폴리오 영역 */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+.portfolio .title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;}
+.portfolio_list {}
+.portfolio_list li {}
+.portfolio_list li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;}
 
 
 
+
+
+/* like 영역 */
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+.like .title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;}
+.like_list {}
+.like_list li {}
+.like_list li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;}
+
+
+
+
+/* 배너 영역 */
+.banner {}
+.banner .banner_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;}
+.banner_1 a {
+    display: block;
+    width: 55px;}
+.banner_1 a i {
+    width: 100%;
+    height: auto;
+    font-size: 70px;}
+
+.banner_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;}
+.banner_list {display: flex;}
+.banner_list li {}
+.banner_list li a {
+    display: block;
+    width: 0;
+    padding: 0 40px;}
+.banner_list li a i {font-size: 30px;}
+
+
+
+
+/* sns 영역 */
+.sns {display: flex;
+    justify-content: center;
+    align-items: center;}
+.social_list {}
+.social_list li {margin: 20px 0;}
+.social_list li a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 3;
+    background-color: #000;
+    border-radius: 50%;}
+.social_list li a svg {
+    fill: #ffffff;
+    font-size: 40px;
+}
+.social_list li a i {
+    color: #ffffff;
+    font-size: 40px;}
 
 
 
@@ -207,13 +305,13 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 .gallery {order: 3;}
 
 /* 인기검색어 영역 */
-.rank {order: 4;}
+.profile {order: 4;}
 
 /* 최신글 영역 */
-.latest_post {order: 5;}
+.portfolio {order: 5;}
 
 /* 인기글 영역 */
-.popular_post {order: 6;}
+.like {order: 6;}
 
 /* 배너 섹션 */
 .banner {order: 7;}

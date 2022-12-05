@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- 폰트 어썸 연결 -->
+    <script src="https://use.fontawesome.com/29f84cf8f7.js"></script> 
+
     <!-- 외부 스타일 시트 연결_그리드 가이드 
     <link rel="stylesheet" href="grid-guide.css">-->
 
     <!-- 외부 스타일 시트 연결 -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="box1">
@@ -56,29 +60,66 @@
             <aside class="submenu">
                 <h3>전체글</h3>
                 <ul>
-                    <li><a href="#">야는 첫번째 글이여</a></li>
-                    <li><a href="#">야는 두번쨰 글이구</a></li>
-                    <li><a href="#">이거슨 세번째 글인겨</a></li>
-                    <li><a href="#">마지막이다잉</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>야는 첫번째 글이여</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>야는 두번쨰 글이구</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>이거슨 세번째 글인겨</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>마지막이다잉</a></li>
                 </ul>
             </aside>
 
             <aside class="category">
                 <h3>카테고리</h3>
                 <ul>
-                    <li><a href="#">독서기록</a></li>
-                    <li><a href="#">일상 글</a></li>
+                    <li><a href="#">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                        <div class="text">독서기록</div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/12/02/56/girl-1733352_960_720.jpg" alt="">
+                        <div class="text">일상 글</div>
+                        </a>
+                    </li>
                 </ul>
             </aside>
 
             <aside class="popular">
                 <h3>인기글</h3>
                 <ul>
-                    <li><a href="#">데일 카네기 - 인간관계론</a></li>
-                    <li><a href="#">팀 패리스 - 타이탄의 도구들</a></li>
-                    <li><a href="#">황보름 - 어서오세요, 휴남동 서점입니다</a></li>
-                    <li><a href="#ㄴ">2022년 11월을 마무리하며</a></li>
-                    <li><a href="#ㄴ">2022년 상반기 휴학라이프</a></li>
+                    <li><a href="#">
+                        <img src="https://i.pinimg.com/564x/83/2e/d7/832ed7ea76cd51d1dc9a883daa48f8ea.jpg" alt=""> 
+                        <div class="text">
+                            인간관계론
+                            <span>데일 카네기</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="https://i.pinimg.com/564x/d7/94/e2/d794e2343dd8e342aa9b5992636412aa.jpg" alt="">
+                        <div class="text">
+                            타이탄의 도구들
+                            <span>팀 패리스</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <img src="https://i.pinimg.com/564x/8a/6b/21/8a6b214e188422421d339bc5bd484a9b.jpg" alt="">
+                        <div class="">
+                            어서오세요, 휴남동 서점입니다
+                            <span>황보름</span>
+                        </div>
+                        </a>
+                    </li>
+                    <li><a href="#ㄴ">
+                        <img src="" alt="">
+                        <div class="text">2022년 11월을 마무리하며</div>
+                        </a>
+                    </li>
+                    <li><a href="#ㄴ">
+                        <img src="" alt="">
+                        <div class="text">2022년 상반기 휴학라이프</div>
+                        </a>
+                    </li>
                 </ul>
             </aside>
         </div>

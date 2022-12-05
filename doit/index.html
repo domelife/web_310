@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>HTML 학습서_DOIT!</title>
 
     <!-- 폰트어썸 연결 -->
@@ -13,6 +13,23 @@
     <!-- 외부 스타일 시트 -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/reset.css">
+
+    <!-- 자바스크립트 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 자바스크립트 동적구현 -->
+    <script>
+        // 메뉴버튼을 클릭했을 때, gnb를 보이게 해라
+
+        $(document).ready(function(){
+            $('.menu_toggle_btn').click(function(){
+                $('.gnb').slideToggle()
+            })
+        })
+    </script>
+
+
+
 </head>
 <body>
     <div id="wrap">

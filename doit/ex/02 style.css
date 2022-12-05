@@ -41,18 +41,18 @@
 
 
 /* 인기 검색어 설정 */
-.rank {background-color: #a3898c;
+.profile {background-color: #a3898c;
         width: 22.92%;}
 
 
 /* 최근글 설정 */
-.latest_post {background-color: #dfdfdf;
+.portfolio {background-color: #c9bbc8;
                 width: 30%;
                 height: 500px;}
 
 
 /* 인기글 설정 */
-.popular_post {background-color: #95343f;
+.like {background-color: #b6b4c2;
                 width: 30%;}
 
 
@@ -63,7 +63,7 @@
 
 .banner>div {flex: 1;}
 .banner_1 {background-color: #d2aaad;}
-.banner_2 {background-color: #5c2331;}
+.banner_2 {background-color: #884c70;}
 
 
 /* sns 설정 */

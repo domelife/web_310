@@ -73,6 +73,11 @@ a {color: black;
 .submenu ul>li>a {display: block;
         padding: 3px;
         font-size: 15px;}
+.submenu ul li a i {
+        color:rgb(224, 172, 184);
+        margin-right: 10px;
+        font-size: 25px;
+}
 
 
 
@@ -88,14 +93,35 @@ a {color: black;
 .category ul {}
 .category ul>li {margin-left: 5px;}
 .category ul>li>a {display: block;
-        padding: 3px;
-        font-size: 15px;}
+        padding: 0;
+        font-size: 15px;
+        position: relative;
+        margin-bottom: 20px;}
+.category ul li a img {
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+}
+.category .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 100%;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+
+
+}
 
 
 
 
 /* 인기글 설정 */
-.popular {margin-top: 30px;}
+.popular {margin-top: 40px;}
 .popular h3 {margin-top: 0;
         margin-bottom: 20px;
         border-bottom: double 1px #999;
@@ -167,7 +193,7 @@ a {color: black;
         .boxA::after {content: ""; clear: both; display: block;}
 
         /* 박스 3과 박스 4의 좌우간격 */
-        .box3 {padding-right: 30px;
+        .box4 {padding-left: 120px;
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;}
