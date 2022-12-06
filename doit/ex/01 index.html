@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>나의 소개</title>
 
     <!-- 폰트 어썸 연결 -->
@@ -13,6 +13,21 @@
     <!-- 외부 스타일 시트 연결 -->
     <link rel="stylesheet" href="02 style.css">
     <link rel="stylesheet" href="03 style.css">
+
+    <!-- 자바스크립트 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 자바스크립트 동작 구현 -->
+    <script>
+        // 메뉴버튼을 클릭했을 때 mine을 보이게 하라
+
+        $(document).ready(function(){
+            $('.menu_btn').click(function(){
+                $('.mine').slideToggle()
+            })
+        })
+    </script>
+
 </head>
 <body>
     <div id="wrap">

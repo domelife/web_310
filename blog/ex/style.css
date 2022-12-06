@@ -129,9 +129,74 @@ a {color: black;
         color: #666;}
 .popular ul {}
 .popular ul>li {margin-left: 5px;}
-.popular ul>li>a {display: block;
+.popular ul>li>a {
+        display: block;
         padding: 5px;
-        font-size: 15px;}
+        font-size: 15px;
+        color: #666;
+        border-bottom: 1px dotted #999;}
+
+.popular img {float: left;
+        width: 60px;
+        height: auto;}
+
+.popular li a::after {content: ""; clear: both; display: block;}
+
+.popular .text {
+        float: none;
+        width: auto;
+        margin-left: 70px;}
+
+.popular span {display: block;
+        font-size: 14px;
+        color: rgb(63, 63, 187);}
+
+
+
+
+/* sns 설정 */
+.sns {margin-top: 40px;}
+.sns ul {display: flex;}
+.sns ul li {flex: 1;}
+.sns ul li a {display: block;
+        padding: 10px 10px;
+        font-size: 15px;
+        text-align: center;
+        background-color: #999;
+        color: #fff;}
+
+.sns ul li:nth-child(1) a {background-color: #1da1f2;}
+.sns ul li:nth-child(2) a {background-color: #1877f2;}
+.sns ul li:nth-child(3) a {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,e1306c+30,f56040+69,fcaf45+100 */
+        background: #833ab4; /* Old browsers */
+        background: -moz-linear-gradient(top,  #833ab4 0%, #e1306c 30%, #f56040 69%, #fcaf45 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #833ab4 0%,#e1306c 30%,#f56040 69%,#fcaf45 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #833ab4 0%,#e1306c 30%,#f56040 69%,#fcaf45 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#fcaf45',GradientType=0 ); /* IE6-9 */
+        }
+
+
+.sns ul li a i {}
+
+
+
+/* 관련 기사 설정 */
+.relation {margin-top: 40px;
+        background-color: rgba(224, 172, 184, 0.5);
+        padding: 20px;}
+.relation h3 {margin-top: 5px;
+        margin-bottom: 20px;
+        color: rgb(77, 77, 77);}
+
+.relation ul::after {content: ""; clear: both; display: block;}
+.relation ul li {float: left;
+        width: 25%;
+        height: auto;}
+.relation ul li a {display: block;
+        padding: 5px;
+        font-size: 12px;
+        text-align: center;}
+.relation ul li a img {width: 100%;}
 
 
 
@@ -177,7 +242,66 @@ a {color: black;
 
 /* ###################################미디어 쿼리 구간###################################### */
 
-/* 모바일 구간 */
+/* 모바일 구간 1 */
+/* ##########599px 이하일 때############# */
+@media (max-width:599px) {
+
+.story h2 {font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: bold;}
+        
+
+.box2>nav>ul>li>a {display: block;
+        padding: 15px 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;}
+
+
+/* sns 설정 */
+.sns span {text-indent: -9999px;
+        display: block;
+        padding: 5px;}
+
+
+
+/* 관련기사 */
+.relation ul li 
+        {float: left;
+        width: 50%;}
+
+.relation ul li:nth-child(odd) {clear: both;}
+
+
+}
+
+
+
+
+
+
+/* 모바일 구간 2 */
+/* #######600px 이상 767px 이하일 때 */
+@media (min-width:600px) and (max-width:767px) {}
+
+
+.box2>nav>ul>li>a {display: block;
+        padding: 20px 30px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;}
+
+
+
+/* 박스 4_1과 박스 4_2의 가로정렬 */
+.box4_1 {float: left;
+        width: 49%;}
+.box4_2 {float: right;
+        width: 49%;}
+
+.box4::after {content: ""; clear: both; display: block;}
+
+
 
 
 
@@ -186,12 +310,9 @@ a {color: black;
 @media (min-width:768px) {
         .box3 {width: 60%;
         float: left;}
-
         .box4 {width: 40%;
                 float: left;}
-
         .boxA::after {content: ""; clear: both; display: block;}
-
         /* 박스 3과 박스 4의 좌우간격 */
         .box4 {padding-left: 120px;
                 box-sizing: border-box;
