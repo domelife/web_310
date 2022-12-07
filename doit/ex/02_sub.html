@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>나의 소개</title>
+
+    <!-- 폰트 어썸 연결 -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/29f84cf8f7.js"></script> 
+
+    <!-- 외부 스타일 시트 연결 -->
+    <link rel="stylesheet" href="02_style.css">
+    <link rel="stylesheet" href="03_style.css">
+    <link rel="stylesheet" href="02_sub.css">
+
+    <!-- 자바스크립트 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 자바스크립트 동작 구현 -->
+    <script>
+        // 메뉴버튼을 클릭했을 때 mine을 보이게 하라
+
+        $(document).ready(function(){
+            $('.menu_btn').click(function(){
+                $('.mine').slideToggle()
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <section class="info_section">
+                <ul class="info_list">
+                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-id-badge" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </section>
+
+            <h1 class="logo"><a href="01 index.html">Dome's <br> Profile</a></h1>
+            <nav class="nav">
+                <ul class="mine">
+                    <li><a href="#">Home</a><span class="mine_menu_btn">하위메뉴버튼</span></li>
+                    <li><a href="#">Profile</a><span class="mine_menu_btn">하위메뉴버튼</span></li>
+                    <li><a href="#">like</a><span class="mine_menu_btn">하위메뉴버튼</span></li>
+                </ul>
+                <span class="menu_btn">전체메뉴버튼</span>
+            </nav>
+        </header>
+
+
+        <section class="content_section_01">
+            <div>
+                <p>html이란? Hyper text markup language로 웹페이지를 읽을 수 있게 만들어주는 언어이다.</p>
+                <ul>
+                    <li>
+                        <a href="글자태그 001.html"><img src="http://picsum.photos/200/100" alt=""><span>제목태그와 글자태그</span></a>
+                    </li>
+                    <li>
+                        <a href="글자태그 002.html"><img src="http://picsum.photos/200/100" alt=""> <span>텍스트태그</span></a>
+                    </li>
+                    <li>
+                        <a href="공간태그 001.html"><img src="http://picsum.photos/200/100" alt=""> <span>div태그 / span태그</span></a>
+                    </li>
+                    <li>
+                        <a href="이미지와 링크태그.html"><img src="http://picsum.photos/200/100" alt=""> <span>a태그 / img태그</span></a>
+                    </li>
+                    <li>
+                        <a href="목록태그 001.html"><img src="http://picsum.photos/200/100" alt=""> <span>ol태그 / ul태그</span></a>
+                    </li>
+                    <li>
+                        <a href="테이블태그 001.html"><img src="http://picsum.photos/200/100" alt=""> <span>테이블태그</span></a>
+                    </li>
+                    <!-- 추후내용이 추가될 때마다 삽입 -->
+                    <li><a href="시맨틱태그 001.html"><img src="http://picsum.photos/200/100" alt=""> <span>시맨틱태그의 종류</span></a></li>
+                    <li><a href="입력양식태그 001.html"><img src="http://picsum.photos/200/100" alt=""> <span>form태그</span></a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="content_ex">
+            <div>
+                <p>학습을 하면서 예제를 만들었던 파일모음</p>
+                <ul>
+                    <li><a href="ex_song.html"><img src="http://picsum.photos/300/400" alt=""><div class="text">동요모음</div></a></li>
+                    <li><a href="ex_form 001.html"><img src="http://picsum.photos/300/400" alt=""><div class="text">주문서 작성</div></a></li>
+                    <li><a href="ex_star.html"><img src="http://picsum.photos/300/400" alt=""><div class="text">별 헤는 밤</div></a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <p>Copyright ⓒ 2022.SUMI. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
