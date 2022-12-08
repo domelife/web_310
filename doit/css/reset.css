@@ -80,6 +80,9 @@ img {vertical-align: top;}
         color: #ffffff;}
 
 
+.gnb>li>a:hover {font-weight: bold;}
+
+
 
 
 /* 토글버튼 */
@@ -134,12 +137,21 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
         height: auto;
         padding: 10px;}
 
-.gallery_list>li>a {display: block;}
+.gallery_list>li>a {display: block;
+        color: #fff;}
+
+
+
+.gallery_list>li>a:hover {filter: grayscale(100%);
+        color: #333;}
+
+
+
 
 .gallery_list figure {text-align: center;}
 
-.gallery_list img {width: 100%;
-        height: auto;}
+.gallery_list img {width: 200px;
+        height: 100px;}
 
 .gallery_list figcaption {margin-top: 10px;}
 
@@ -151,24 +163,46 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;}
+        align-items: center;
+}
 
 .rankup_section .title {
         margin-bottom: 30px;
         font-size: 20px;
         text-align: center;
-        color: #ffffff;}
+        color: #ffffff;
+        letter-spacing: 10px;}
+
+
+.rankup_section .title::after{content: "2022년 12월 업데이트";
+        display: block;
+        font-size: 14px;
+        margin-top: 5px;
+        font-weight: normal;
+        color: #666;
+        letter-spacing: 1px;}
+
+
 
 .rankup_section .rankup_list {}
 
-.rankup_section .rankup_list>li {}
+.rankup_section .rankup_list>li {margin-bottom: 15px;}
 
 .rankup_section .rankup_list>li>a {
         display: block;
         padding: 10px;
         font-size: 14px;
         color: #ffffff;
-        font-weight: bold;}
+        font-weight: bold;
+        background-image: url(../img/circle-right-regular.svg);
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position: left center;
+        text-indent: 20px;
+}
+
+
+.rankup_list>li>a:hover {color: #000000;}
 
 
 
@@ -194,6 +228,16 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 
 
 
+.latest_post_list li a:hover {text-decoration: underline;}
+
+
+.latest_post_section em {font-size: 18px;
+        font-style: normal;
+        margin-right: 5px;
+        color: darkblue;}
+
+
+
 /* 인기글 영역 */
 .popular_post_section {
         display: flex;
@@ -215,6 +259,16 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
         font-weight: bold;}
 
 
+.popular_post_list li a:hover {text-decoration: underline;}
+
+
+
+.popular_post_section em {font-size: 18px;
+        font-style: normal;
+        margin-right: 5px;
+        color: darkblue;}
+        
+
 
 
 /* 배너 영역 */
@@ -230,7 +284,15 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 .banner_box_01 a svg {
         width: 100%;
         height: auto;
-        fill: #fff;}
+        fill: #fff;
+        transition: all 0.5s;}
+
+
+
+.banner_box_01 a:hover svg {transform: scale(1.2);}
+
+
+
 
 .banner_box_02 {
         height: 135px;
@@ -245,6 +307,9 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
         padding: 0 10px;}
 .banner_list li a svg {
         fill: #fff;}
+
+
+.banner_box_02 a:hover svg {transform: scale(1.2);}
 
 
 
