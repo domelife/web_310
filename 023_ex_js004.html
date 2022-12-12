@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 예제</title>
+</head>
+<body>
+    <h1>반복문 출력</h1>
+
+    <script>
+        document.write('<h2> for문 작성 </h2>');
+
+        //for문 - 자동스톱
+        //변수등록
+
+        //let i =0;
+        //while(i<10) {
+        //  document.write(i); 
+        //  i++;}
+        
+
+        //for문 작성
+        //for(var a=0; a<10; a++){
+        //    document.write(a)
+        //}
+
+
+
+
+        //문제 -구구단 2단 만들기
+
+        // document.write('<h2> 구구단 2단 </h2>')
+
+        // document.write('2X1=2<br>')
+        // document.write('2X2=4<br>')
+        
+        // 힌트 document.write('2X'+ 변수 +'='+(변수*2)+'<br>')
+
+        // for(var aa=1; aa<10; aa++){
+        //     document.write('2X' + aa + '=' + (aa*2) + '<br>')}
+
+        // document.write('<h2> 구구단 3단 </h2>')
+        // for(var bb=1; bb<10; bb++){
+        //     document.write('3X' + bb + '=' + (bb*3) + '<br>')}
+
+        // document.write('<h2> 구구단 4단 </h2>')
+        // for(var cc=1; cc<10; cc++){
+        //     document.write('4X' + cc + '=' + (cc*4) + '<br>')}
+
+        // document.write('<h2> 구구단 5단 </h2>')
+        // for(var dd=1; dd<10; dd++){
+        //     document.write('5X' + dd + '=' + (dd*5) + '<br>')}
+
+        // document.write('<h2> 구구단 6단 </h2>')
+        // for(var ee=1; ee<10; ee++){
+        //     document.write('6X' + ee + '=' + (ee*6) + '<br>')}
+
+        // document.write('<h2> 구구단 7단 </h2>')
+        // for(var ff=1; ff<10; ff++){
+        //     document.write('7X' + ff + '=' + (ff*7) + '<br>')}
+
+        // document.write('<h2> 구구단 8단 </h2>')
+        // for(var gg=1; gg<10; gg++){
+        //     document.write('8X' + gg + '=' + (gg*8) + '<br>')}
+
+        // document.write('<h2> 구구단 9단 </h2>')
+        // for(var hh=1; hh<10; hh++){
+        //     document.write('9X' + hh + '=' + (hh*9) + '<br>')}
+
+
+        // 정답
+        for(var aaa=2; aaa<10; aaa++){
+            document.write('<h2> 구구단' + aaa + '단 </h2>')
+            for(var aa=1; aa<10; aa++)
+            document.write(aaa + 'X' + aa + '=' + (aa*aaa) + '<br>')}
+
+
+
+
+
+        // while문으로도 만들기
+        document.write('<h2> while문 구구단 2단 </h2>')
+        let ii=1;
+            while(ii<10) {
+                document.write('2X' + ii + '=' + (ii*2) + '<br>');
+            ii++;
+            }
+
+    </script>
+</body>
+</html>

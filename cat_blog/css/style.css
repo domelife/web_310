@@ -7,6 +7,9 @@
 
 * {margin: 0; padding: 0;}
 
+ul, ol {list-style: none;}
+
+a {text-decoration: none;}
 
 body {background-image: linear-gradient(to left, #faf6ed 50%, #efe8d5 50%);
     background-size: 40px 100%;}
@@ -28,7 +31,8 @@ header .logo {
     color: #949087;
     text-align: center;
     font-family: 'Amatic SC', cursive;
-    padding-top: 30px;}
+    padding-top: 30px;
+    font-weight: normal;}
 
 header>p {
     color: #949087;
@@ -184,7 +188,6 @@ header>p {
 
 .side_section>div li::before {
     content: "";
-    display: inline-block;
     width: 8px; 
     height: 8px; 
     border-radius: 50%;
@@ -238,6 +241,92 @@ header>p {
 
 
 
+/* 페이지네이션 설정 */
+.pagenation {display: flex;
+    justify-content: center;}
+
+.pagenation li {
+    margin: 0 10px;}
+
+.pagenation li a {display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #949087;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;}
+
+.pagenation li a:hover {
+    background-color: #93d8d0;
+    color: #ffffff;
+}
+
+
+.pagenation li:last-child a:hover {
+    background-color: transparent;
+    color: #949087;
+    text-decoration: underline;
+}
+
+
+
+.pagenation .current a{
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.pagenation li:first-child a:hover {
+    background-color: #cccccc;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+
+/* 페이지와 페이지의 구분 라인 */
+.pagenation li::after {
+    content: "\003C";
+    margin-left: 20px;
+    color: #949087;}
+
+
+.pagenation li:last-child::after {
+    content: "\0020";
+    margin-left: 20px;
+    color: #949087;}
+
+.pagenation li:nth-child(4)::after {
+    content: "\0020";
+    margin-left: -10px;
+    color: #949087;
+}
+
+
+
+
+/* 푸터 설정 */
+footer {
+    background-color: #949087;
+    text-align: center;
+    padding: 48px;
+    margin-top: 40px;}
+
+footer ul {display: flex;
+    justify-content: center;}
+
+footer li {margin: 0 12px;}
+
+footer li a {display: block;
+    color: #ffffff;}
+
+footer li a:hover {
+    color: #000;}
+
+footer p {font-size: 14px;
+    color: #333;
+    margin-top: 20px;}
+
 
 
 /* ##############미디어 쿼리 구간############ */
@@ -251,7 +340,7 @@ header>p {
 
     .main_section {width: 68%;}
 
-    .side_secton {width: 26%;}
+    .side_section {width: 26%;}
 }
 
 

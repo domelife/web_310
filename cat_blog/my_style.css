@@ -30,9 +30,12 @@ header h1 {
     text-align: center;
     font-size: 60px;
     font-family: 'Amatic SC', cursive;
-    padding-top: 30px;}
+    padding-top: 30px;
+    font-weight: normal;
+    color: #949087;}
 
 header p {
+    color: #949087;
     text-align: center;
     font-size: 20px;
     margin: 20px 0;}
@@ -80,10 +83,16 @@ header p {
 }
 
 .post_hone .post_title h2 {
-    font-size: 30px;
-    background-color: #ffffff;}
+    font-size: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 14px;
+    background-color: #ffffff;
+    font-family:'Noto Sans', sans-serif;}
 
-.post_hone .post_title h2 a {}
+.post_hone .post_title h2 a {
+    color: #949087;
+}
 
 
 .box01 {}
@@ -104,9 +113,15 @@ header p {
         text-align: center;
         font-family: 'Amatic SC', cursive;
         color: #fff;
-        border-radius: 30% 60% 50% 70%/50%;}
+        border-radius: 30% 60% 50% 70%/50%;
+        padding: 10px;
+        box-sizing: border-box;
+        }
 
-    .post_img>span {display: block;}
+        .post_img>p>span {display: block;
+        border-bottom: dashed 1px #fff;
+        padding-bottom: 5px;
+        }
 
     .box01 .post_img img {
         border-radius: 40% 70% 50% 30%/50%;
@@ -119,7 +134,8 @@ header p {
 .box01 .post_story {
     font-size: 22px;
     margin-bottom: 20px;
-    line-height: 1.5;}
+    line-height: 1.5;
+    color: #949087;}
 
 
 .post_hone::after {content: ""; clear: both; display: block;}
@@ -150,17 +166,61 @@ header p {
 /* 1234설정 */
 .main_section ul {
     display: flex;
-    justify-content: center;
-    font-size: 40px;
-    letter-spacing: 40px;
-    padding: 50px;
+    justify-content: center;}
+
+.main_section ul li {
+    margin: 0 10px;
 }
-.main_section ul li {}
+
 .main_section ul li a {
-    display: block;
-    color: #999;
-    font-weight: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #949087;
+    font-weight: normal;  
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;}
+
+.main_section ul li a:hover {
+    background-color: #93d8d0;
+    color: #ffffff;}
+    
+    
+
+.main_section ul li:last-child a:hover {
+    background-color: transparent;
+    color: #949087;
 }
+
+.pagenation .current a{
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.pagenation li:first-child a:hover {
+    background-color: #cccccc;
+    color: #ffffff;
+    opacity: 0.8;}
+
+
+/* 1234 구분선 */
+.pagenation li::after{
+    content: "|";
+    margin-left: 20px;
+    color: #949087;}
+
+.pagenation li:last-child::after {
+    content: "\0020";
+    margin-left: 20px;
+    color: #949087;}
+    
+.pagenation li:nth-child(4)::after {
+    content: "\0020";
+    margin-left: -10px;
+    color: #949087;
+    }
 
 
 
@@ -168,70 +228,116 @@ header p {
 
 /* 어사이드 섹션!!!!!!!!!!!!!!!고쳐야함 */
 /* 카테고리 설정 */
-.side_section {
-    display: flex;
-    flex-flow: column wrap;
-    width: 40%;
-    box-sizing: border-box;}
+.side_section {}
 
-.side_section .cat {
-    border: #999 double 2px;
+.side_section>div {
+    margin-bottom: 40px;
+    border: 1px solid #cccccc;
+    outline: 2px solid #cccccc;
+    outline-offset: 4px;
+    border-radius: 10px;
+    padding: 16px;}
 
-    width: 100%;
+.side_section>div li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #93d8d0;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+
+
 }
+
 .side_section .cat h3 {
     font-size: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
     text-align: center;
-}
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 5px;}
+
 .cat ul {}
 .cat ul li {
-    border-bottom: dotted #999 5px;
-    width: 100%;
-    padding: 20px;
-}
+    border-bottom: dashed #cccccc 1px;
+    display: flex;
+    align-items: center;}
+
+
+
 .cat ul li a {
     display: block;
-    font-size: 25px;
-    padding: 30px 10px;}
+    color: #949087;
+    font-size: 15px;
+    padding: 15px 0px;
+    flex: 1;}
 
 
 
 /* 뉴스 설정 */
-    .side_section .news {
-        border: #999 double 2px;
-        margin-bottom: 100px;
-    }
     .side_section .news h3 {
         font-size: 30px;
-        padding-bottom: 30px;
+        margin-bottom: 20px;
+        margin-top: 15px;
         text-align: center;
-    }
+        font-family: 'Amatic SC', cursive;
+        letter-spacing: 5px;}
+
     .news p {
-        font-size: 25px;
-        padding: 30px 10px;}
-    .news form {}
+        font-size: 15px;
+        color: #949087;
+        line-height: 1.6;
+        margin: 20px 0;}
+
+    .news form {display: flex;}
+
+    .news input {
+        padding: 16px;}
+
+    .news input[type='email'] {
+        width: 75%;
+        border-radius: 10px 0 0 10px;
+        border: 2px solid #cccccc;
+        border-right: none;}
+
+    .news input[type='sumit'] {
+        width: 25%;
+        border-radius: 0 10px 10px 0;
+        background-color: #eda1a1;
+        border: none;
+        color: #fff;
+        font-size: 20px;}
+
+    .news input:focus {outline: none;}
+
 
 
 
 
 /* 인기글 설정 */
 
-        .side_section .popular {
-            border: #999 double 2px;
-            margin-bottom: 60px;
-        }
+
         .side_section .popular h3 {
             font-size: 30px;
-            padding-bottom: 30px;
+            margin-bottom: 20px;
+            margin-top: 15px;
             text-align: center;
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 5px;
         }
         .popular ul {}
-        .popular ul li {}
+        .popular ul li {
+            border-bottom: dashed #cccccc 1px;
+            display: flex;
+            align-items: center;
+        }
         .popular ul li a {
             display: block;
-            font-size: 25px;
-            padding: 30px 10px;}
+            color: #949087;
+            font-size: 15px;
+            padding: 15px 0px;
+            flex: 1;}
         
 
 
@@ -241,30 +347,29 @@ header p {
 footer {
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
-    height: auto;
-    background-color: rgb(109, 96, 85);
-    justify-content: center;
-    align-items: center;
+    background-color: #949087;
     text-align: center;
-    
-}
-footer ul {display: flex;}
+    padding: 48px;
+    margin-top: 40px;}
+
+footer ul {display: flex;
+    justify-content: center;}
     
 footer ul li {
-    padding: 40px;
-    
-}
+    margin: 0 40px;}
 
 footer ul li a {
     display: block;
     color: #fff;
-    font-size: 30px;}
+    font-size: 25px;}
+
+footer ul li a:hover {
+    color: #000;}
+
 footer p {
-    color: #fff;
+    color: #333;
     font-size: 20px;
-    padding: 50px;
-}
+    padding: 50px;}
 
 
 
