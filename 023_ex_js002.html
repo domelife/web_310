@@ -60,6 +60,7 @@
         }
     </style>
 
+
     <body>
         <h1>당신의성적표</h1>
         <div class="table">
@@ -71,9 +72,9 @@
                 <li>평균</li>
             </ul>
             <ul class="write">
-                <li id="kor"></li>
-                <li id="math"></li>
-                <li id="eng"></li>
+                <li id="kor"><button id="a">클릭</button></li>
+                <li id="math"><button id="b">클릭</button></li>
+                <li id="eng"><button id="c">클릭</button></li>
                 <li id="add"></li>
                 <li id="avg"></li>
             </ul>
@@ -81,59 +82,73 @@
     
         <div id="result"></div>
 
-
-
-
         <script>
-            let kor = Number(prompt('국어점수는 몇점입니까?'))
-            document.write('국어점수는' + kor + '입니다.')
-
-            let math = Number(prompt('수학점수는 몇점입니까?'))
-            document.write('수학점수는' + math + '입니다.')
-
-            let eng = Number(prompt('영어점수는 몇점입니까?'))
-            document.write('영어점수는' + eng + '입니다.')
-
-            let sum = (kor + math + eng)
-            document.write('총점은' + (kor + math + eng)  + '입니다.')
-
-            let averge = (kor + math + eng) / 3
-            document.write('평균값은' + (
-                kor + math + eng
-            ) / 3 + '입니다.')
-
-
-            if (averge >= 90) {
-                document.write('A학점 입니다.')
-            } else if (averge < 90 && averge >= 80) {
-                document.write('B학점 입니다.')
-            } else if (averge < 80 && averge >= 70) {
-                document.write('C학점 입니다.')
-            } else if (averge < 70 && averge >= 60) {
-                document.write('D학점 입니다.')
-            } else {
-                document.write('F학점 입니다.')
-            }
-
-
-            // 자바스크립트 선택하기 방법
-            let Rkor = document.getElementById('kor');
-            Rkor.innerHTML= kor;
-
-            let Rmath = document.getElementById('math');
-            Rmath.innerHTML= math;
-
-            let Reng = document.getElementById('eng');
-            Reng.innerHTML= eng;
-
-            let Rsum = document.getElementById('add')
-            Rsum.innerHTML= sum;
-
-            let Raverge = document.getElementById('avg')
-            Raverge.innerHTML= averge;
-
-
+            document.getElementById('a').addEventListener('click',
+                function(event) {
+                let kor = Number(prompt('국어점수는 몇점입니까?'))
+                document.write('국어점수는' + kor + '입니다.')
+                })
+        
 
         </script>
+
+
+
+        
+
+
+        // <script>
+        //     let kor = Number(prompt('국어점수는 몇점입니까?'))
+        //     document.write('국어점수는' + kor + '입니다.')
+
+        //     let math = Number(prompt('수학점수는 몇점입니까?'))
+        //     document.write('수학점수는' + math + '입니다.')
+
+        //     let eng = Number(prompt('영어점수는 몇점입니까?'))
+        //     document.write('영어점수는' + eng + '입니다.')
+
+        //     let sum = (kor + math + eng)
+        //     document.write('총점은' + (kor + math + eng)  + '입니다.')
+
+        //     let averge = (kor + math + eng) / 3
+        //     document.write('평균값은' + (
+        //         kor + math + eng
+        //     ) / 3 + '입니다.')
+
+
+        //     if (averge >= 90) {
+        //         document.write('A학점 입니다.')
+        //     } else if (averge < 90 && averge >= 80) {
+        //         document.write('B학점 입니다.')
+        //     } else if (averge < 80 && averge >= 70) {
+        //         document.write('C학점 입니다.')
+        //     } else if (averge < 70 && averge >= 60) {
+        //         document.write('D학점 입니다.')
+        //     } else {
+        //         document.write('F학점 입니다.')
+        //     }
+
+        //     //자바스크립트 선택하기 방법
+            
+        //     let Rkor = document.getElementById('kor');
+        //     Rkor.innerHTML= kor;
+
+
+
+        //     let Rmath = document.getElementById('math');
+        //     Rmath.innerHTML= math;
+
+        //     let Reng = document.getElementById('eng');
+        //     Reng.innerHTML= eng;
+
+        //     let Rsum = document.getElementById('add')
+        //     Rsum.innerHTML= sum;
+
+
+        //     let Raverge = document.getElementById('avg')
+        //     Raverge.innerHTML= averge;
+
+        // </script>
+
     </body>
 </html>

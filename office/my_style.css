@@ -1,0 +1,112 @@
+/* 언어설정 */
+@charset 'uft-8';
+
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+
+ul {list-style: none;}
+a {text-decoration: none;
+    color: black;}
+img {vertical-align: bottom;
+    border: none;}
+html {scroll-behavior: smooth;}
+
+
+
+/* 전체화면설정 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;}
+
+section h2 {text-align: center;}
+
+section {height: 500px;}
+
+#about {background-color: #999;}
+#news {background-color: #777;}
+#speakers {background-color: #555;}
+#ticket {background-color: #333;}
+
+
+/* 헤더 설정 */
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333; 
+    position: fixed;
+    top: 0;
+    left: 0;}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;}
+
+.header .logo {
+            display: block;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+}
+
+.header .nav {}
+        .nav ul {display: flex;}
+        .nav ul li {}
+        .nav ul li a {
+            display: block;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;}
+
+
+
+.nav .sub_menu_toggle_btn_ {}
+
+.header .menu_toggle_btn {}
+
+
+
+
+/* 메인 설정 */
+.mainImg {
+    text-align: center;
+    height: 500px;
+    background-color: rgb(99, 153, 134);
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    display: flex;
+    align-items: center;
+    animation: back 30s infinite;
+    animation-direction: alternate;}
+
+
+/* 애니메이션 설정 */
+@keyframes back {
+    0% {background-color: #4db1ec;}
+    10% {background-color: #1665cc;}
+    20% {background-color: #b473bf;}
+    30% {background-color: #ffb2c1;}
+    40% {background-color: #ff9f67;}
+    50% {background-color: #ffd673;}
+    60% {background-color: #a2e29b;}
+    70% {background-color: #00a2af;}
+    80% {background-color: #4db1ec;}
+    90% {background-color: #bf4dec;}
+    100% {background-color: #4db1ec;}}
+
+
+
+.mainImg h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+
+
+

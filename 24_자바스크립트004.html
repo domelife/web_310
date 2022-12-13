@@ -77,10 +77,129 @@
         ex.style.color = '#ffffff'
         box1[0].style.background = '#ffff00'
         box[1].style.background = '#ff0000'
-        list.style.color = '#000'
-        listAll.style.color = '#000'
-
-
+        listAll[2].style.color = '#000'
+        listAll.item(1).style.background = '#000'
+        //listAll은 item으로 순번을 표기한다.
     </script>
+
+
+    <h2>Event</h2>
+    <p>선택자 혹은 도큐먼트 상에서 행동을 가했을때 발생되는 현상</p>
+
+    <table border="1">
+        <tr>
+            <td>이벤트</td>
+            <td>설명</td>
+        </tr>
+
+        <tr>
+            <td>click</td>
+            <td>마우스를 클릭했을 때 이벤트가 발생된다.</td>
+        </tr>
+
+        <tr>
+            <td>mouseover</td>
+            <td>마우스가 오버했을때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>mousemove</td>
+            <td>마우스가 움직였을 때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>mouseenter</td>
+            <td>마우스가 들어갔을때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>mouseleave</td>
+            <td>마우스가 떠났을 때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>submit</td>
+            <td>submit를 눌렀을 때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>load</td>
+            <td>페이지를 열었을 때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>resize</td>
+            <td>사이즈가 변경되었을 때 이벤트가 발생한다.</td>
+        </tr>
+
+        <tr>
+            <td>scroll</td>
+            <td>스크롤바가 움직였을 때 이벤트가 발생한다.</td>
+        </tr>
+
+        
+    </table>
+
+
+    <div class="ex002">
+        <!-- 인라인 방식의 이벤트 구현 -->
+        <button onclick="showTxt()">click me!</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <button onclick="practice()" >연습해봅시다.</button>
+
+        <!-- addEventListener -->
+        <button id="btn">직접연결창</button>
+    </div>
+
+
+    <script>
+        function showTxt() {
+
+            let show = document.querySelector('.ex002>p').innerHTML
+
+            if(show =='<h1>Hello</h1>') {
+                document.querySelector('.ex002>p').innerHTML = ''
+                document.querySelector('body').style.background = '#000000';
+                document.querySelector('body').style.color = '#ffffff'}
+
+            else if(show == '') {
+                document.querySelector('.ex002>p').innerHTML = '<h1>Hello</h1>'
+                document.querySelector('body').style.background = '#ffffff';
+                document.querySelector('body').style.color = '#000000';}
+
+            }
+    </script>
+
+    <script>
+        function practice() {
+
+            let view = document.querySelectorAll('.ex002>p').item(1).innerHTML
+
+            if(view == 'Bye') {
+                document.querySelectorAll('.ex002>p').item(1).innerHTML = ''
+                document.querySelector('body').style.background = '#999999';
+                document.querySelector('body').style.color = '#ffffff';
+            }
+
+            else if(view == '') {
+                document.querySelectorAll('.ex002>p').item(1).innerHTML = 'Bye'
+                document.querySelector('body').style.background = '#ffffff'
+                document.querySelector('body').style.color = '#000000'
+            }
+        }
+    </script>
+
+
+    <script>
+        document.getElementById('btn').addEventListener('click',
+        
+        function(event){
+            alert('성공하셨습니다.')
+        }
+        )
+    </script>
+
 </body>
 </html>
