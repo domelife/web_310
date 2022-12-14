@@ -72,9 +72,9 @@
                 <li>평균</li>
             </ul>
             <ul class="write">
-                <li id="kor"><button id="a">클릭</button></li>
-                <li id="math"><button id="b">클릭</button></li>
-                <li id="eng"><button id="c">클릭</button></li>
+                <li id="kor"><button id="a">Click</button></li>
+                <li id="math"><button id="b">Click</button></li>
+                <li id="eng"><button id="c">Click</button></li>
                 <li id="add"></li>
                 <li id="avg"></li>
             </ul>
@@ -86,10 +86,37 @@
             document.getElementById('a').addEventListener('click',
                 function(event) {
                 let kor = Number(prompt('국어점수는 몇점입니까?'))
-                document.write('국어점수는' + kor + '입니다.')
+                
+                let Rkor = document.getElementById('kor');
+                    Rkor.innerHTML= kor;
                 })
-        
 
+
+            document.getElementById('b').addEventListener('click',
+                function(event) {
+                let math = Number(prompt('수학점수는 몇점입니까?'))
+                
+                let Rmath = document.getElementById('math');
+                    Rmath.innerHTML= math;
+                })
+
+
+            document.getElementById('c').addEventListener('click',
+                function(event) {
+                let eng = Number(prompt('영어점수는 몇점입니까?'))
+                
+                let Reng = document.getElementById('eng');
+                    Reng.innerHTML= eng;
+                })
+                
+                
+            document.getElementById('add').addEventListener('click',
+                function(event) {
+                let sum = (kor + math + eng)
+
+                let Rsum = document.getElementById('add')
+                    Rsum.innerHTML= sum;
+                })
         </script>
 
 
@@ -97,7 +124,7 @@
         
 
 
-        // <script>
+        <script>
         //     let kor = Number(prompt('국어점수는 몇점입니까?'))
         //     document.write('국어점수는' + kor + '입니다.')
 
@@ -132,8 +159,6 @@
             
         //     let Rkor = document.getElementById('kor');
         //     Rkor.innerHTML= kor;
-
-
 
         //     let Rmath = document.getElementById('math');
         //     Rmath.innerHTML= math;
